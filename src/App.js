@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Post from './components/themes/theme-one/Post'
 
 class App extends Component {
   constructor() {
@@ -21,30 +22,30 @@ class App extends Component {
     })
 }
 render() {
-     
-    let posts = this.state.posts.map((post,index) => {
-        return(
-            <div key={index} className="post">
-            <h2>{post.title.rendered} </h2>
-             
-            <p dangerouslySetInnerHTML={{__html: post.content.rendered}} ></p>
-            <p>{post.date} </p>
-            </div>
-        )
-    })
-    return (
-        <div className="App">
-            <h1>Posts</h1>
-            <h3>In React from Wordpress Backend.</h3>
-             {posts}
-             <hr/>
-             <p>to do:
-               <ul>
-                 <li>crud via rest api</li>
-               </ul>
-             </p>
-        </div>
-    )
+  let posts = this.state.posts.map((post,index) => {
+      return(
+          <div key={index} className="post">
+          <h2>{post.title.rendered} </h2>
+          
+          <p dangerouslySetInnerHTML={{__html: post.content.rendered}} ></p>
+          <p>{post.date} </p>
+          </div>
+      )
+  })
+  return (
+      <div className="App">
+          <h1>Posts</h1>
+          <h3>In React from Wordpress Backend.</h3>
+          {posts}
+          <hr/>
+          <p>to do:</p>
+            <ul>
+              <li>crud via rest api</li>
+              <li>files like wp</li>
+            </ul>
+          
+      </div>
+  )
 }
 }
 
