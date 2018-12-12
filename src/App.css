@@ -1,3 +1,6 @@
+body{
+  background-color:#ddd;
+}
 .App {
   text-align:center;
   border:solid 1px #ddd;
@@ -5,6 +8,7 @@
   width:80%;
   margin-left:auto;
   margin-right:auto;
+  background-color:#fff;
 }
  .post{
    text-align:left;
