@@ -3,9 +3,7 @@ import './App.css';
 import Post from './components/themes/theme-one/Post'
 
 class App extends Component {
-  constructor() {
-    super();
-  }
+   
   
 render() {
   
@@ -21,6 +19,7 @@ render() {
               <li>npm run build</li>
               <li>SASS</li>
               <li>check live</li>
+              <li>host wp on AWS: https://aws.amazon.com/getting-started/tutorials/launch-a-wordpress-website/</li>
             </ul>
             <hr/>
            <Post  ></Post>
